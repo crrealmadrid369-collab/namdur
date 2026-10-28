@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>RentCar — Car Rental</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="#home"><span class="brand-mark">R</span><span>rentcar</span></a>
+        <nav class="nav-tabs">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#cars">Cars</a>
+          <a class="nav-link" href="#booking">Booking</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+        <div class="top-actions">
+          <button class="round-btn" id="searchOpen" aria-label="Search">⌕</button>
+          <button class="login" id="loginBtn">Log in</button>
+          <button class="hamb" id="menuBtn">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section class="page home-page" id="home">
+        <div class="wrap">
+          <div class="hero-banner">
+            <div class="hero-copy">
+              <div class="mini-label">THE BEST WAY TO RENT A CAR</div>
+              <h1>Find your perfect<br><strong>car for any journey.</strong></h1>
+              <p>Easy booking, flexible dates and a great selection of cars. Choose your ride and hit the road.</p>
+              <a class="orange-btn" href="#cars">Find a car <span>→</span></a>
+            </div>
+            <div class="hero-search">
+              <div class="search-card-title">Search a car</div>
+              <label>Location<input id="homeLocation" value="Tashkent, Uzbekistan"></label>
+              <div class="two-fields">
+                <label>Pick-up<input id="homePick" type="date" value="2026-08-26"></label>
+                <label>Return<input id="homeReturn" type="date" value="2026-08-29"></label>
+              </div>
+              <button class="orange-btn full" id="homeSearch">Search</button>
+            </div>
+          </div>
+
+          <div class="stats-row">
+            <div><b>5k+</b><span>cars available</span></div>
+            <div><b>2k+</b><span>happy customers</span></div>
+            <div><b>120+</b><span>locations</span></div>
+          </div>
+
+          <div class="intro-grid">
+            <div class="photo-card photo-one"><img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=900&q=85" alt="Car road"></div>
+            <div class="intro-copy">
+              <div class="section-kicker">WHY RENT WITH US</div>
+              <h2>Everything you need for a smooth ride.</h2>
+              <ul class="benefits">
+                <li><span>✓</span><div><b>Simple booking</b><small>Reserve your car in a few quick steps.</small></div></li>
+                <li><span>✓</span><div><b>Flexible rental</b><small>Pick the dates and car that work for you.</small></div></li>
+                <li><span>✓</span><div><b>Quality vehicles</b><small>Clean, comfortable and ready to drive.</small></div></li>
+                <li><span>✓</span><div><b>Helpful support</b><small>We are here when you need us.</small></div></li>
+              </ul>
+            </div>
+          </div>
+
+          <section class="section-block">
+            <div class="section-title"><div><div class="section-kicker">POPULAR CARS</div><h2>Choose from our cars</h2></div><a href="#cars">See all →</a></div>
+            <div class="car-grid compact" id="homeCars"></div>
+          </section>
+
+          <div class="purple-offer">
+            <div><div class="offer-small">SPECIAL OFFER</div><h2>Rent your first car<br>and save 20%</h2><p>Make your first trip more affordable.</p><a class="white-btn" href="#cars">Get the offer</a></div>
+            <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=85" alt="Car">
+          </div>
+
+          <section class="section-block">
+            <div class="section-title"><div><div class="section-kicker">HOW IT WORKS</div><h2>Rent a car in 3 steps</h2></div></div>
+            <div class="three-cards">
+              <article><span class="step-number">01</span><h3>Choose your car</h3><p>Find a car that fits your trip, style and budget.</p></article>
+              <article><span class="step-number">02</span><h3>Set your dates</h3><p>Select where and when you want to pick it up.</p></article>
+              <article><span class="step-number">03</span><h3>Enjoy the ride</h3><p>Confirm your booking and start your journey.</p></article>
+            </div>
+          </section>
+
+          <div class="app-banner">
+            <div><div class="section-kicker light">MOBILE APP</div><h2>Rent from anywhere.</h2><p>Keep your booking in one place and manage your trip easily.</p><div class="store-row"><button> App Store</button><button>▶ Google Play</button></div></div>
+            <div class="phone"><div class="phone-notch"></div><div class="phone-screen"><span>rentcar</span><b>Find your car</b><div></div><div></div><div></div></div></div>
+          </div>
+
+          <section class="section-block reviews-section">
+            <div class="section-title"><div><div class="section-kicker">CUSTOMER REVIEWS</div><h2>What our customers say</h2></div></div>
+            <div class="review-grid"><article><div class="stars">★★★★★</div><p>“The booking was simple and the car was exactly what I expected.”</p><b>Alex M.</b><small>Verified customer</small></article><article><div class="stars">★★★★★</div><p>“Great choice of cars and a very easy pick-up experience.”</p><b>Sarah K.</b><small>Verified customer</small></article><article><div class="stars">★★★★★</div><p>“Clean car, clear price and everything was ready on time.”</p><b>Daniel R.</b><small>Verified customer</small></article></div>
+          </section>
+        </div>
+      </section>
+
+      <!-- CARS -->
+      <section class="page inner-page" id="cars">
+        <div class="wrap">
+          <div class="page-head"><div><div class="section-kicker">OUR FLEET</div><h1>Find your car</h1><p>Choose from our available vehicles.</p></div><button class="filter-open" id="filterOpen">☷ Filters</button></div>
+          <div class="filter-bar"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Sedan">Sedan</button><button class="filter" data-filter="SUV">SUV</button><button class="filter" data-filter="Luxury">Luxury</button><button class="filter" data-filter="Electric">Electric</button></div>
+          <div class="car-grid" id="carGrid"></div>
+        </div>
+      </section>
+
+      <!-- DETAILS -->
+      <section class="page inner-page" id="details">
+        <div class="wrap" id="detailRoot"></div>
+      </section>
+
+      <!-- BOOKING -->
+      <section class="page inner-page" id="booking">
+        <div class="wrap booking-layout">
+          <div class="booking-form">
+            <div class="section-kicker">BOOK YOUR CAR</div><h1>Complete your booking</h1><p class="muted">Fill in the details below to reserve your selected car.</p>
+            <div class="form-section"><h3>Rental details</h3><div class="form-grid"><label>Pick-up location<input id="bookLocation" value="Tashkent, Uzbekistan"></label><label>Pick-up date<input id="bookPick" type="date" value="2026-08-26"></label><label>Return date<input id="bookReturn" type="date" value="2026-08-29"></label><label>Pick-up time<input type="time" value="10:00"></label></div></div>
+            <div class="form-section"><h3>Your details</h3><div class="form-grid"><label>Full name<input id="bookName" placeholder="Your name"></label><label>Phone number<input id="bookPhone" placeholder="+998 __ ___ __ __"></label><label class="wide">Email<input id="bookEmail" type="email" placeholder="you@example.com"></label></div></div>
+            <button class="purple-btn" id="confirmBooking">Confirm booking</button>
+          </div>
+          <aside class="booking-summary" id="bookingSummary"></aside>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="page inner-page" id="contact">
+        <div class="wrap contact-page"><div><div class="section-kicker">CONTACT</div><h1>Need help?</h1><p class="muted">Send us a message and we will get back to you.</p><div class="contact-items"><div><b>Phone</b><span>+998 71 000 00 00</span></div><div><b>Email</b><span>hello@rentcar.example</span></div><div><b>Location</b><span>Tashkent, Uzbekistan</span></div></div></div><form class="contact-form" id="contactForm"><input placeholder="Your name"><input placeholder="Email"><textarea placeholder="Your message"></textarea><button class="purple-btn">Send message</button></form></div>
+      </section>
+    </main>
+
+    <footer><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">R</span><span>rentcar</span></a><span>Simple car rental for every journey.</span><span class="footer-copy">© 2026 RentCar</span></div></footer>
+  </div>
+  <div class="search-modal" id="searchModal"><div class="search-modal-box"><button class="close" id="searchClose">×</button><div class="section-kicker">SEARCH</div><h2>Find a car</h2><input id="modalSearch" placeholder="Search by car name..."><div id="searchResults"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="main.js"></script>
+</body>
+</html>

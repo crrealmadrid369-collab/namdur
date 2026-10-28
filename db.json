@@ -1,0 +1,13 @@
+{
+  "cars": [
+    {"id":1,"name":"BMW 3 Series","type":"Sedan","price":78,"seats":5,"gear":"Auto","fuel":"Petrol","image":"https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1000&q=85"},
+    {"id":2,"name":"Mercedes-Benz GLC","type":"SUV","price":105,"seats":5,"gear":"Auto","fuel":"Petrol","image":"https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1000&q=85"},
+    {"id":3,"name":"Audi A6","type":"Sedan","price":92,"seats":5,"gear":"Auto","fuel":"Petrol","image":"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=85"},
+    {"id":4,"name":"Range Rover Sport","type":"Luxury","price":145,"seats":5,"gear":"Auto","fuel":"Hybrid","image":"https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1000&q=85"},
+    {"id":5,"name":"Porsche Cayenne","type":"Luxury","price":160,"seats":5,"gear":"Auto","fuel":"Petrol","image":"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85"},
+    {"id":6,"name":"Toyota RAV4","type":"SUV","price":69,"seats":5,"gear":"Auto","fuel":"Hybrid","image":"https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85"},
+    {"id":7,"name":"Tesla Model 3","type":"Electric","price":88,"seats":5,"gear":"Auto","fuel":"Electric","image":"https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1000&q=85"},
+    {"id":8,"name":"BMW X5","type":"SUV","price":125,"seats":5,"gear":"Auto","fuel":"Petrol","image":"https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=1000&q=85"},
+    {"id":9,"name":"Mercedes-Benz E-Class","type":"Luxury","price":118,"seats":5,"gear":"Auto","fuel":"Hybrid","image":"https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1000&q=85"}
+  ]
+}
